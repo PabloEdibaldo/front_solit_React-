@@ -1,0 +1,26 @@
+{
+    "apiBaseURL":"http://172.16.15.37:8080/api/",
+    "endpoints":{
+        "obtenerClientes":{
+            "get":"users/getAllUserConfigured/"
+        },
+        "Internet":{
+            "get":"internet/package/",
+            "post":"internet/package/",
+            "put":"internet/package/updatePackage/",
+            "delete":"internet/package/deletePackage/"
+        },
+        "crearCliente":{
+            "post":"billing"
+        },
+        "asignarMacDHCP":{
+            "post":"users/postMac/"
+        },
+        "contentBilling":{
+            "get":"billing/contentBilling/"
+        },
+        "getUserConfigured":{
+            "get":"users/getUserConfigured/"
+        }
+    }
+}

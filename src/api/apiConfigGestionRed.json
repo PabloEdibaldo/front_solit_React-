@@ -1,0 +1,28 @@
+{
+    "apiBaseURL":"http://172.16.15.37:8080/api/",
+    "endpoints":{
+        "router":{
+            "get":"routers/",
+            "post":"routers/",
+            "put":"routers/{id}/",
+            "delete":"routers/{id}/",
+            "consumoRouter":{
+                "get":"routers/router/info?idRouter={}"
+            },
+            "ConsumoDelSistemaInterfaces":{
+                "get":"routers/router/info?idRouter={}"
+            }
+        },
+        "redIpv4":{
+            "get":"redIpv4/",
+            "post":"redIpv4/",
+            "put":"redIpv4/{id}/",
+            "delete":"redIpv4/{id}/",
+            "ipsDisponibles":"redIpv4/ips/"
+        },
+        "CajaNap":{
+            "get":"box/",
+            "puertos":"box/ports/"
+        }
+    }
+}

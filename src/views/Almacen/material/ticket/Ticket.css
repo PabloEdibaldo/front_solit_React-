@@ -1,0 +1,54 @@
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+}
+
+@media screen {
+  .print-only {
+    display: none !important;
+  }
+}
+/* Estilos específicos para impresión */
+@media print {
+  @page {
+    margin: 0;
+    size: auto 100mm; /* Eliminar márgenes de la página */
+  }
+
+  body {
+    margin: 0; /* Eliminar márgenes del cuerpo */
+  }
+
+  .ticket {
+    width: 100%; /* Utilizar el 100% del ancho del contenedor */
+    padding: 0; /* Eliminar padding */
+    font-size: 70px; /* Ajusta el tamaño de la fuente si es necesario */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+    text-align: center; /* Centrar el contenido horizontalmente */
+  }
+
+  .ticket-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Centrar la tabla horizontalmente */
+    text-align: center; /* Centrar el contenido de la tabla horizontalmente */
+  }
+
+  .ticket-table th, .ticket-table td {
+    border: 1px solid black;
+    padding: 8px; /* Ajusta el padding si es necesario */
+    text-align: center; /* Centrar el contenido de la celda horizontalmente */
+  }
+
+  .ticket-table th {
+    background-color: #f2f2f2;
+  }
+
+  .btn {
+    display: none; /* Ocultar botones en la impresión */
+  }
+}
